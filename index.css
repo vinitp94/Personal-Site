@@ -35,7 +35,6 @@ body * {
   z-index: 10;
   background: white;
   border-bottom: 2px solid brown;
-  border-top: 1px solid brown;
 }
 
 #about {
@@ -56,7 +55,7 @@ body * {
 .body h3 {
   font-size: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid brown;
   margin-bottom: 25px;
 }
 
@@ -87,6 +86,7 @@ body * {
   z-index: 10;
   background: transparent;
   color: white;
+  border-bottom: 2px solid brown;
 }
 
 #header {
@@ -103,11 +103,13 @@ body * {
 }
 
 #title > h1 {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid brown;
+  margin-bottom: 25px;
 }
 
 #title > h5 {
-  margin: 5px 0px 0px 4px;
+  margin: 7px 0px 0px 4px;
   font-size: 18px;
 }
 
@@ -150,12 +152,23 @@ body * {
   margin-bottom: 20px;
 }
 
+#project-list h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#project-list p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
 #project-list > li {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 400px;
+  height: 500px;
   color: white;
   margin: 30px 20px;
 }
