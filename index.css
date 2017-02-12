@@ -24,54 +24,123 @@ body * {
 }
 
 .white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 100vw;
   height: 400px;
   z-index: 10;
-  background: navy;
-  border-bottom: 2px solid black;
+  background: white;
+  border-bottom: 1px solid navy;
+  border-top: 1px solid navy;
 }
 
 .curve-cont {
-  background: black;
-  margin-top: 200px;
+  position: absolute;
+  background: navy;
+  margin-top: 250px;
   z-index: 20;
   left: 0;
   bottom: 0;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .curve {
   height: 100%;
   width: 100%;
-  border-radius: 0px 0px 0px 200px;
-  background: navy;
+  border-radius: 0px 0px 0px 150px;
+  background: white;
 }
 
 .clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 400px;
   z-index: 10;
   background: transparent;
 }
 
+#header {
+  justify-content: flex-start;
+}
+
+#title {
+  margin-left: 120px;
+}
+
 #title > * {
   color: white;
   font-weight: 200;
   font-size: 64px;
-  position: absolute;
-  margin: 100px 0px 0px 100px;
 }
 
 #title > h5 {
-  margin: 175px 0px 0px 105px;
-  font-size: 20px;
+  margin: 4px 0px 0px 4px;
+  font-size: 18px;
 }
 
 #footer {
   height: 250px;
+  overflow: hidden;
+}
+
+#footer-bg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
 }
 
 #footer > .curve-cont {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 325px;
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px white;
+  background: transparent;
+  z-index: 20;
+}
+
+#links img {
+  margin: 0px 15px;
+  height: 30px;
+  width: 30px;
+}
+
+#links img:hover {
+  height: 36px;
+  width: 36px;
+  margin: 0px 12px;
+}
+
+#phone img {
+  height: 26px;
+  width: 26px;
+}
+
+#phone img:hover {
+  height: 32px;
+  width: 32px;
+}
+
+#mail img {
+  height: 24px;
+  width: 32px;
+}
+
+#mail img:hover {
+  margin: 0px 11px;
+  height: 30px;
+  width: 40px;
 }
