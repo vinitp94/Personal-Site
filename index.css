@@ -150,6 +150,9 @@ body * {
   height: 200px;
   background: white;
   margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  box-shadow: 1px 1px 7px white;
 }
 
 #project-list h4 {
@@ -236,29 +239,30 @@ body * {
   width: 40px;
 }
 
-button {
+.buttons {
   padding: 20px 0px;
   width: 150px;
   font-size: 18px;
   background: white;
   border-radius: 5px;
+  border: 1px solid white;
   transition: all 0.10s ease-in-out;
+  color: black;
+  text-align: center;
 }
 
-button:hover {
-  box-sizing: border-box;
+.buttons:hover {
   cursor: pointer;
   color: white;
-  border: 1px solid white;
   background: transparent;
 }
 
-button:focus {
+.buttons:focus {
   border: 1px solid brown;
   outline: none;
 }
 
-button:active {
+.buttons:active {
   border: 1px solid brown;
   background: white;
   color: black;
