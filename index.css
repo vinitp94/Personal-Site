@@ -12,6 +12,7 @@ body * {
   margin: 0px;
   padding: 0px;
   border: 0px;
+  font-weight: 200;
 }
 
 #bg {
@@ -33,24 +34,35 @@ body * {
   min-height: 400px;
   z-index: 10;
   background: white;
-  border-bottom: 1px solid navy;
-  border-top: 1px solid navy;
+  border-bottom: 2px solid brown;
+  border-top: 1px solid brown;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  width: 76vw;
+  margin: 80px 12vw;
+  z-index: 100;
 }
 
 .body {
+  display: flex;
   width: 76vw;
   margin: 80px 12vw;
+  z-index: 100;
 }
 
-.body > h3 {
+.body h3 {
   font-size: 30px;
-  font-weight: 200;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 25px;
 }
 
 .curve-cont {
   position: absolute;
-  background: navy;
+  background: brown;
   margin-top: 250px;
   z-index: 20;
   left: 0;
@@ -87,34 +99,71 @@ body * {
 
 #title > * {
   color: white;
-  font-weight: 200;
   font-size: 64px;
 }
 
+#title > h1 {
+  margin-bottom: 15px;
+}
+
 #title > h5 {
-  margin: 4px 0px 0px 4px;
+  margin: 5px 0px 0px 4px;
   font-size: 18px;
 }
 
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me > h3 {
+  align-self: flex-end;
+}
+
+#projects > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects h3 {
+  align-self: center;
+}
+
+#portrait {
+  min-width: 20vw;
+  background: black;
+  margin-right: 50px;
+}
+
 #project-list {
+  width: 76vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
 }
 
-#project-list > li {
-  width: 400px;
-  height: 300px;
+#project-list img {
+  width: 100%;
+  height: 200px;
   background: white;
-  color: black;
-  box-shadow: 1px 1px 7px white;
-  margin: 30px 30px;
+  margin-bottom: 20px;
+}
+
+#project-list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  color: white;
+  margin: 30px 20px;
 }
 
 #footer {
   height: 250px;
   overflow: hidden;
+  border-bottom: none;
 }
 
 #footer-bg {
@@ -172,4 +221,32 @@ body * {
   margin: 0px 11px;
   height: 30px;
   width: 40px;
+}
+
+button {
+  padding: 20px 0px;
+  width: 150px;
+  font-size: 18px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.10s ease-in-out;
+}
+
+button:hover {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+}
+
+button:focus {
+  border: 1px solid brown;
+  outline: none;
+}
+
+button:active {
+  border: 1px solid brown;
+  background: white;
+  color: black;
 }
