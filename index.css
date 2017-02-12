@@ -18,6 +18,7 @@ body * {
   position: fixed;
   width: 100vw;
   min-width: 1200px;
+  filter: blur(6px);
   z-index: 1;
   top: 0;
   left: 0;
@@ -29,11 +30,22 @@ body * {
   align-items: center;
   position: relative;
   width: 100vw;
-  height: 400px;
+  min-height: 400px;
   z-index: 10;
   background: white;
   border-bottom: 1px solid navy;
   border-top: 1px solid navy;
+}
+
+.body {
+  width: 76vw;
+  margin: 0px 12vw;
+}
+
+.body > h3 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 30px;
 }
 
 .curve-cont {
@@ -59,9 +71,10 @@ body * {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 400px;
+  min-height: 400px;
   z-index: 10;
   background: transparent;
+  color: white;
 }
 
 #header {
@@ -69,7 +82,7 @@ body * {
 }
 
 #title {
-  margin-left: 120px;
+  margin-left: 12vw;
 }
 
 #title > * {
