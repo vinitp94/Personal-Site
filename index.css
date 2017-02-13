@@ -132,9 +132,16 @@ body * {
 }
 
 #portrait {
-  min-width: 20vw;
+  margin-top: 80px;
+  width: 250px;
+  height: 250px;
   background: black;
   margin-right: 50px;
+}
+
+#portrait img {
+  width: 250px;
+  height: 250px;
 }
 
 #project-list {
@@ -173,7 +180,7 @@ body * {
   width: 300px;
   height: 500px;
   color: white;
-  margin: 30px 20px;
+  margin: 30px 25px;
 }
 
 #footer {
@@ -291,5 +298,5 @@ body * {
 }
 
 #hobbies a:hover {
-  color: purple;
+  color: brown;
 }
