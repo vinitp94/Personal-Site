@@ -137,6 +137,8 @@ body * {
   height: 250px;
   background: black;
   margin-right: 50px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 7px black;
 }
 
 #portrait img {
@@ -293,12 +295,12 @@ body * {
   align-self: flex-start;
 }
 
-#hobbies h5 {
+#hobbies h5, #edu h5 {
   margin-bottom: 10px;
   font-size: 24px;
 }
 
-#hobbies p {
+#hobbies p, #edu p {
   margin-bottom: 35px;
 }
 
@@ -308,4 +310,12 @@ body * {
 
 #hobbies a:hover {
   color: brown;
+}
+
+#edu {
+  flex-direction: column;
+}
+
+#edu > h3 {
+  align-self: flex-end;
 }
